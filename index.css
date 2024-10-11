@@ -1,9 +1,13 @@
 body{
     background-color: black;
 }
-.nav,a{
+.nav{
     text-decoration: none;
     color: #530007;
     display: flex;
     justify-content: space-evenly;
+}
+
+.nav a{
+    color: white;
 }
