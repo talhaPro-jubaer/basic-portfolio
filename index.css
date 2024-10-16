@@ -17,6 +17,9 @@ body{
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     transition: all 0.5s;
+    position: sticky;
+    top: 0px;
+
 }
 .nav:hover{
     backdrop-filter: blur(3px);
@@ -52,19 +55,28 @@ body{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
-.anime a{
-    text-decoration: none;
-    margin: 20px;
-    color: rgb(255, 255, 255,0.8);
+    gap: 50px 50px;
+    padding: 14px;
 }
 .anime div{
     flex: 1 1 200px; /* Allows flexibility with a minimum width */
-    margin: 20px;
     line-height: 25px;
     background-image: linear-gradient(to right,rgba(0, 0, 0, 0.1),rgba(255, 255, 255, 0.1));
-    backdrop-filter: blur(10);
+    backdrop-filter: blur(5px);
     border-radius: 15px;
-    padding: 15px;
+    padding: 35px;
     transition: background-image 10s;
+}
+.anime div:hover{
+    backdrop-filter: blur(5px);
+}
+.anime a{
+    text-decoration: none;
+    margin: 8px;
+    color: rgb(224, 224, 224);
+    font-size: 18px;
+    transition: color .3s;
+}
+.anime a:hover{
+    color: rgba(0, 0, 0, 0.8);
 }
