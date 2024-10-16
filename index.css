@@ -142,7 +142,7 @@ body{
         grid-column: 1 /-1;
     }
     .Top10{
-       grid-column: 1/;
+       grid-column: 1/1;
     }
     .anime div{
         flex: 1 1 200px; /* Allows flexibility with a minimum width */
