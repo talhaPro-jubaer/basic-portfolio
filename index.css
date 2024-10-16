@@ -2,6 +2,9 @@
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+html{
+    scroll-behavior: auto;
+}
 body{
     background-image: url(anime.jpg);
     background-repeat: no-repeat;
@@ -12,13 +15,11 @@ body{
 .nav{
     display: flex;
     justify-content: space-evenly;
-    padding: 35px;
-    border-radius: 0px 0px 20px 20px;
+    padding: 30px;
+    border-radius: 0px 0px 25px 25px;
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
-    transition: all 0.5s;
-    position: sticky;
-    top: 0px;
+    transition: backdrop-filter 0.5s;
+    backdrop-filter: blur(5px);   
 
 }
 .nav:hover{
@@ -26,8 +27,8 @@ body{
 }
 .nav a{
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 900;
+    font-size: 18px;
+    font-weight: 800;
     color: rgb(241, 234, 234);
     transition: all .2s;
 }
@@ -38,8 +39,8 @@ body{
 }
 .logo{
     margin-right: 200px;
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 22px;
+    font-weight: 900;
     transition: all 0.2s;
 }
 .logo:hover{
@@ -79,4 +80,95 @@ body{
 }
 .anime a:hover{
     color: rgba(0, 0, 0, 0.8);
+}
+
+
+@media (max-width: 320px){
+    .nav{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+        border-radius: 0px 0px 15px 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: backdrop-filter 0.5s;
+        backdrop-filter: blur(5px);   
+    
+    }
+    .nav:hover{
+        backdrop-filter: blur(3px);
+    }
+    .logo{
+        margin-right: 10px;
+        margin-left: -18px;
+        font-size: 15px;
+        font-weight: 700;
+        transition: all 0.2s;
+    }
+    .logo:hover{
+        margin-right: 12px;
+    }
+    .nav a{
+        text-decoration: none;
+        margin-left: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        color: rgb(241, 234, 234);
+        transition: all .2s;
+    }
+    .nav a:hover{
+        font-size: 15px;
+        margin: 0px 5px ;
+        color: black;
+    }
+
+
+
+    .anime{
+        margin: 6px 5px;
+        backdrop-filter: blur(8px);
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 10px 10px;
+        padding: 10px;
+
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .Mostview{
+        grid-column: 1 /-1;
+    }
+    .Top10{
+       grid-column: 1/;
+    }
+    .anime div{
+        flex: 1 1 200px; /* Allows flexibility with a minimum width */
+        line-height: 15px;
+        background-image: linear-gradient(to right,rgba(0, 0, 0, 0.1),rgba(255, 255, 255, 0.1));
+        backdrop-filter: blur(5px);
+        border-radius: 15px;
+        padding: 15px;
+        transition: background-image 10s;
+        
+    }
+    .anime div:hover{
+        backdrop-filter: blur(5px);
+    }
+    .anime a{
+        text-decoration: none;
+        margin: 2px;
+        padding: -10px;
+        color: rgb(224, 224, 224);
+        font-size: 12px;
+        transition: color .3s;
+    }
+    .anime a:hover{
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .anime p{
+        font-size: 10px;
+    }
 }
