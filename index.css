@@ -110,8 +110,8 @@ body{
 
 
 
-@media (max-width: 420px){
-    .navpic{
+@media (max-widt <= 420px){
+    /* .navpic{
         position: relative;
     }
     .navpic img{
@@ -127,7 +127,7 @@ body{
         border-radius: 10px 10px 0px 0px;
         backdrop-filter: blur(5px);
 
-    }
+    } */
     .nav{
         /* display: flex;
         justify-content: space-evenly; */
