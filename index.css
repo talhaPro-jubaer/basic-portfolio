@@ -92,8 +92,54 @@ body {
     color: rgba(0, 0, 0, 0.8);
 }
 
+
+
+/* folding style */
+
+/* .Othertype p{
+display: none;
+}
+.Othertype{
+height: 147;
+}
+.Othertype p:hover{
+display: block;
+}
+.Othertype:hover{
+height: 100;
+}
+
+
+
+.bestaction p{
+display: none;
+
+}
+.bestaction{
+height: 147;
+}
+*/
+
+
 /* Media Queries for Responsive Design on Tecno Camon 17 */
 @media (max-width: 420px) {
+    /* .navpic{
+position: relative;
+}
+.navpic img{
+height: 232px;
+
+}
+.navpic h2{
+position: absolute;
+top: 150px;
+margin-top: 8px;
+padding: 5px 3px;
+border-top: 3px solid;
+border-radius: 10px 10px 0px 0px;
+backdrop-filter: blur(5px);
+
+} */
     .nav {
         padding: 15px;
         margin-bottom: 10px;
