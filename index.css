@@ -82,25 +82,79 @@ body{
     color: rgba(0, 0, 0, 0.8);
 }
 
+/* folding style */
+
+/* .Othertype p{
+    display: none;
+}
+.Othertype{
+    height: 147;
+}
+.Othertype p:hover{
+    display: block;
+}
+.Othertype:hover{
+    height: 100;
+}
+
+
+
+.bestaction p{
+    display: none;
+   
+}
+.bestaction{
+    height: 147;
+}
+ */
+
+
 
 @media (max-width: 420px){
+    .navpic{
+        position: relative;
+    }
+    .navpic img{
+        height: 232px;
+        
+    }
+    .navpic h2{
+        position: absolute;
+        top: 150px;
+        margin-top: 8px;
+        padding: 5px 3px;
+        border-top: 3px solid;
+        border-radius: 10px 10px 0px 0px;
+        backdrop-filter: blur(5px);
+
+    }
     .nav{
-        display: flex;
-        justify-content: space-evenly;
-        padding: 20px;
-        border-radius: 0px 0px 15px 15px;
+        /* display: flex;
+        justify-content: space-evenly; */
+        padding: 15px;
+        margin-top: -7px;
+        height: 22px;
+        border-radius: 0px 0px 10px 10px;
         background-color: rgba(255, 255, 255, 0.1);
         transition: backdrop-filter 0.5s;
         backdrop-filter: blur(5px);   
-    
+        box-shadow: 5px 4px 30px 2px black;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        
+
+        display: grid;
+        grid-template-columns: repeat(6 ,1fr);
+        grid-template-rows: repeat(1 ,1fr);
     }
     .nav:hover{
         backdrop-filter: blur(3px);
     }
     .logo{
-        margin-right: 10px;
-        margin-left: -18px;
-        font-size: 15px;
+        margin-right: 15px;
+        margin-left: -8px;
+        font-size: 18px;
         font-weight: 700;
         transition: all 0.2s;
     }
@@ -110,7 +164,7 @@ body{
     .nav a{
         text-decoration: none;
         margin-left: 10px;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 600;
         color: rgb(241, 234, 234);
         transition: all .2s;
@@ -124,7 +178,7 @@ body{
 
 
     .anime{
-        margin: 6px 5px;
+        margin: 18px 14px;
         backdrop-filter: blur(8px);
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 10px;
@@ -137,22 +191,31 @@ body{
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
-    .Mostview{
+
+
+    /* .Mostview{
         grid-column: 1 /-1;
     }
     .Top10{
-       grid-column: 1/1;
+       grid-column: 1/2;
+    } */
+
+    .Othertype{
+        grid-column: 1/-1;
     }
+
+
     .anime div{
         flex: 1 1 200px; /* Allows flexibility with a minimum width */
-        line-height: 15px;
+        line-height: 16px;
         background-image: linear-gradient(to right,rgba(0, 0, 0, 0.1),rgba(255, 255, 255, 0.1));
-        backdrop-filter: blur(5px);
+        backdrop-filter: brightness(90%);
         border-radius: 15px;
         padding: 15px;
-        transition: background-image 10s;
-        
+        transition: background-image 10s;   
+        box-shadow: 2px 2px 15px 2px black;
     }
     .anime div:hover{
         backdrop-filter: blur(5px);
@@ -160,7 +223,7 @@ body{
     .anime a{
         text-decoration: none;
         margin: 2px;
-        padding: -10px;
+        padding: 10px;
         color: rgb(224, 224, 224);
         font-size: 12px;
         transition: color .3s;
